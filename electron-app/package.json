@@ -1,0 +1,18 @@
+{
+  "name": "electron-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "concurrently \"npm:react-start\" \"npm:nest-start\" \"electron .\"",
+    "react-start": "cd ../frontend && npm start",
+    "nest-start": "cd ../backend && npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "electron": "^32.1.1"
+  }
+}
